@@ -1,14 +1,18 @@
-on: 
-  pull_request: 
-    branches: [main] 
-permissions: 
-  contents: read 
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+permissions:
+  contents: read
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
       - run: pip install -r requirements-dev.txt
       - run: ruff check .
   test:
@@ -16,6 +20,8 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
-      - run: pip install -r requirements-dev.txt
+        with:
+          python-version: "3.12"
+      - name: Installer les dépendances
+        run: pip install -r requirements-dev.txt
       - run: pytest
-  
