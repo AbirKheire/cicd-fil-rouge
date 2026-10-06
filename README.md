@@ -36,31 +36,35 @@ docker run --rm -p 8000:8000 taskflow
 
 ## Endpoints
 
-| Méthode | Chemin | Rôle |
-| --- | --- | --- |
-| GET | `/health` | État de l'API et version |
-| GET | `/tasks` | Liste des tâches |
-| GET | `/tasks/search?q=...` | Recherche dans les titres |
-| POST | `/tasks` | Crée une tâche (`{"title": "..."}`) |
-| GET | `/tasks/{id}` | Détail d'une tâche |
-| PATCH | `/tasks/{id}/done` | Marque une tâche comme faite |
-| DELETE | `/tasks/{id}` | Supprime une tâche (en-tête `X-API-Token` requis) |
+| Méthode | Chemin                | Rôle                                              |
+| ------- | --------------------- | ------------------------------------------------- |
+| GET     | `/health`             | État de l'API et version                          |
+| GET     | `/tasks`              | Liste des tâches                                  |
+| GET     | `/tasks/search?q=...` | Recherche dans les titres                         |
+| POST    | `/tasks`              | Crée une tâche (`{"title": "..."}`)               |
+| GET     | `/tasks/{id}`         | Détail d'une tâche                                |
+| PATCH   | `/tasks/{id}/done`    | Marque une tâche comme faite                      |
+| DELETE  | `/tasks/{id}`         | Supprime une tâche (en-tête `X-API-Token` requis) |
 
 ## Configuration
 
-| Variable | Rôle | Défaut |
-| --- | --- | --- |
-| `APP_VERSION` | Version affichée par `/health` | `0.1.0` |
-| `DB_PATH` | Fichier SQLite | `taskflow.db` |
-| `API_TOKEN` | Jeton exigé pour supprimer une tâche | vide (suppression désactivée) |
-| `NOTIFY_WEBHOOK_URL` | Webhook appelé à chaque création de tâche | vide (désactivé) |
+| Variable             | Rôle                                      | Défaut                        |
+| -------------------- | ----------------------------------------- | ----------------------------- |
+| `APP_VERSION`        | Version affichée par `/health`            | `0.1.0`                       |
+| `DB_PATH`            | Fichier SQLite                            | `taskflow.db`                 |
+| `API_TOKEN`          | Jeton exigé pour supprimer une tâche      | vide (suppression désactivée) |
+| `NOTIFY_WEBHOOK_URL` | Webhook appelé à chaque création de tâche | vide (désactivé)              |
 
 ## Équipe
 
 <!-- Lab J1 : remplacez par les noms du binôme -->
+
 - À compléter
 
 ## Gouvernance du dépôt
 
 <!-- Lab J1 : listez les règles activées sur main, pourquoi chacune, et ajoutez la capture du push refusé -->
+
 À compléter.
+
+# test NaenAbir2
