@@ -57,14 +57,20 @@ docker run --rm -p 8000:8000 taskflow
 
 ## Équipe
 
-<!-- Lab J1 : remplacez par les noms du binôme -->
+<!-- Lab J1 : Fatoumata Naen Bah & Abir kheireddine -->
 
 - À compléter
 
 ## Gouvernance du dépôt
 
-<!-- Lab J1 : listez les règles activées sur main, pourquoi chacune, et ajoutez la capture du push refusé -->
+<!-- Lab J1 : listez les règles activées sur main, pourquoi chacune, et ajoutez la capture du push refusé
+  - Restricts deletions: permet aux owners de supprimer
+  - Require a PR before merging
+  - Require status check to pass
+  - Block force push
+  - Require view from code owners
+  - Required approvals: 1
+
+ -->
 
 À compléter.
-
-# test NaenAbir2
